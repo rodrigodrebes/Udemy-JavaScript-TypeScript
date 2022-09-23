@@ -1,0 +1,20 @@
+<!-- Exercício utilizando JS para escrever no HTML-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercícios Aula 13</title>
+</head>
+<body>
+  <script>
+    const nome = prompt("Digite seu nome: ")
+    document.body.innerHTML = `Seu nome é: ${nome}<br />`
+    document.body.innerHTML += `Seu nome tem ${nome.length} letras <br />`
+    document.body.innerHTML += `A primeira letra do seu nome é: ${nome[0]}<br />`
+    document.body.innerHTML += `As últimas três letras do seu nome são: ${nome.slice(-3)}<br />`
+  </script>
+</body>
+</html>
